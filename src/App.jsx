@@ -7,7 +7,7 @@ function App() {
   const journalEntries = journalEntriesData.map( entry => (
     <Entry 
       key = { entry.id }
-      entry = { entry }
+      { ...entry }
     />
   ))
 
